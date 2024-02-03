@@ -3,6 +3,9 @@
 	import { email, github, logo } from '$lib/images/icons';
 </script>
 
+<svelte:head>
+	<title>Jnagra</title>
+</svelte:head>
 <header class="header">
 	<input class="hamburger" type="checkbox" aria-label="Menu" />
 
@@ -21,11 +24,7 @@
 	<div class="container">
 		<div class="header__inner">
 			<a class="logo" href="/">
-				<img
-					class="logo__img"
-					src={logo}
-					alt="Jnagra logo"
-				/>
+				<img class="logo__img" src={logo} alt="Jnagra logo" />
 				<span class="logo__name">Jnagra</span>
 			</a>
 			<div class="header__links">
@@ -88,12 +87,6 @@
 
 	input {
 		font: inherit;
-	}
-
-	*,
-	*::before,
-	*::after {
-		box-sizing: border-box;
 	}
 
 	.media-header {
@@ -239,6 +232,9 @@
 		.header {
 			padding-top: 16px;
 		}
+		.header__links {
+			display: none;
+		}
 	}
 
 	.footer {
@@ -247,7 +243,6 @@
 		border-top: 1px solid var(--gray);
 		padding-top: 32px;
 		margin-bottom: 16px;
-		margin-top: 60px;
 	}
 	.footer__copyright {
 		color: var(--gray);
