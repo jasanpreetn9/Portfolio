@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+:root {
+    --background: hsl(218 12% 18%);
+    --gray: hsl(219 14% 71%);
+    --gray-op: hsl(219 14% 71%/0.1);
+    --primary: hsl(287 60% 65%);
+    --primary-op: hsl(287 60% 65%/0.1);
+    --white: hsl(0 0% 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: var(--background);
+    color: white;
+}
