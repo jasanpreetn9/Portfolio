@@ -3,6 +3,7 @@
 	const { projects } = data;
 	import { Projects, Skills, Contact } from '$lib/Components';
 	import { hero, aboutMe } from '$lib/images';
+	console.log(projects)
 </script>
 
 <div class="container content">
@@ -28,7 +29,7 @@
 		</blockquote>
 		<figcaption class="quote__author">- Albert Einstein</figcaption>
 	</figure>
-	<Projects {projects} />
+	<Projects projects={projects.slice(0,3)} />
 
 	<Skills />
 

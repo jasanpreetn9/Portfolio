@@ -15,7 +15,7 @@
 					alt={project.name}
 					src={`https://github.com/jasanpreetn9/portfolio-projects/blob/main/previews/${project.preview}?raw=true`}
 					class="project__image"
-					/>
+				/>
 
 				<ul class="project__techs">
 					{#each project.tags as tag}
@@ -28,6 +28,9 @@
 					<div class="project__description">{project.description}</div>
 					<div class="project__links">
 						<a href={project.github_repo} class="button">Github</a>
+						{#if project.live_url}
+							<a href={project.live_url} class="button">Live</a>
+						{/if}
 					</div>
 				</div>
 			</div>
