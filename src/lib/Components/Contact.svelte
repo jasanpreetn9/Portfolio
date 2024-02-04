@@ -1,15 +1,26 @@
-<!-- <form action="">
-    <input type="text" placeholder="Name">
-    <input type="text" placeholder="Email">
-</form> -->
+<script>
+	import { email } from '$lib/images/icons';
+</script>
 
 <sections class="contacts" id="contacts">
 	<h2 class="h2">Contact</h2>
 	<div class="contacts__content">
-		<p class="contacts__description">
-			I’m interested in freelance opportunities. However, if you have other request or question,
-			don’t hesitate to contact me
-		</p>
+		<div class="contact-info">
+			<p class="contacts__description">
+				I’m interested in freelance opportunities. However, if you have other request or question,
+				don’t hesitate to contact me
+			</p>
+			<div class="contacts__media">
+				<h3 class="contacts__title">Contact Info</h3>
+				<div class="contacts__list">
+					<a class="contact" href="mailto:Jasanpreetn9@gmail.com">
+						<img src={email} alt="" />
+						<div class="contact__name">Jasanpreetn9@gmail.com</div>
+					</a>
+				</div>
+			</div>
+
+		</div>
 		<div class="contacts__media">
 			<h3 class="contacts__title">Message me here</h3>
 			<div class="contacts__list">
@@ -84,8 +95,9 @@
 	}
 	.contacts__content {
 		display: flex;
-		flex-direction: column;
-		/* justify-content: space-between; */
+		/* flex-direction: column; */
+		flex-direction: row;
+		justify-content: space-between;
 		align-items: start;
 		flex-wrap: wrap;
 		gap: 32px;
@@ -102,14 +114,22 @@
 	}
 	.contacts__description {
 		color: var(--gray);
-		max-width: 600px;
+		max-width: 500px;
+		margin-bottom: 30px;
+	}
+	.contact {
+		display: flex;
+		gap: 8px;
+		color: var(--gray);
+		align-items: center;
+		margin-top: 8px;
 	}
 	.contacts__media form {
 		max-width: 600px;
 	}
 	.contacts__media form label {
 		font-size: 13px;
-		margin-bottom: .25rem;
+		margin-bottom: 0.25rem;
 	}
 	input {
 		font: inherit;
