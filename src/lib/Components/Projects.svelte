@@ -9,26 +9,25 @@
 	</div>
 
 	<div class="project-list">
-		{#each projects as repo}
+		{#each projects as project}
 			<div class="project">
 				<img
-					alt={repo.name}
-					src={`${repo.html_url}/raw/main/static/Preview.png?raw=true`}
+					alt={project.name}
+					src={`https://github.com/jasanpreetn9/portfolio-projects/blob/main/previews/${project.preview}?raw=true`}
 					class="project__image"
-					onerror={`this.onerror=null; this.src='${repo.html_url}/blob/master/static/Preview.png?raw=true'`}
-				/>
+					/>
 
 				<ul class="project__techs">
-					{#each repo.topics as topic}
-						<li class="project__tech">{topic}</li>
+					{#each project.tags as tag}
+						<li class="project__tech">{tag}</li>
 					{/each}
 				</ul>
 
 				<div class="project__content">
-					<div class="project__name">{repo.name.replace('-', ' ')}</div>
-					<div class="project__description">{repo.description}</div>
+					<div class="project__name">{project.name}</div>
+					<div class="project__description">{project.description}</div>
 					<div class="project__links">
-						<a href={repo.html_url} class="button">Github</a>
+						<a href={project.github_repo} class="button">Github</a>
 					</div>
 				</div>
 			</div>

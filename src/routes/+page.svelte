@@ -1,6 +1,6 @@
 <script>
 	export let data;
-	const { repositories } = data;
+	const { projects } = data;
 	import { Projects, Skills, Contact } from '$lib/Components';
 	import { hero, aboutMe } from '$lib/images';
 </script>
@@ -11,7 +11,10 @@
 			<h1 class="hero__title">
 				Hello! I'm <span>Jasanpreet</span> <span>Nagra</span>
 			</h1>
-			<div class="hero__description">High school senior, web developer, and aspiring innovator. Let's build something awesome together!</div>
+			<div class="hero__description">
+				High school senior, web developer, and aspiring innovator. Let's build something awesome
+				together!
+			</div>
 			<a class="button button__primary" href="#contacts">Contact Me</a>
 		</div>
 		<div class="hero__illustrations">
@@ -25,7 +28,7 @@
 		</blockquote>
 		<figcaption class="quote__author">- Albert Einstein</figcaption>
 	</figure>
-	<Projects projects={repositories} />
+	<Projects {projects} />
 
 	<Skills />
 

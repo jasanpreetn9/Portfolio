@@ -243,6 +243,7 @@
 		border-top: 1px solid var(--gray);
 		padding-top: 32px;
 		margin-bottom: 16px;
+		margin-top: 40px;
 	}
 	.footer__copyright {
 		color: var(--gray);
