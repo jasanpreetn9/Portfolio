@@ -1,5 +1,6 @@
 <script>
 	import '$lib/global.css';
+	import { page } from '$app/stores';
 	import { email, github, logo } from '$lib/images/icons';
 </script>
 
@@ -28,11 +29,25 @@
 				<span class="logo__name">Jnagra</span>
 			</a>
 			<div class="header__links">
-				<a href="/" class="header__link header__link_active">Home</a>
+				<a
+					href="/"
+					class={`header__link ${$page.url.pathname === '/' ? 'header__link_active' : ''}`}
+				>
+					home
+				</a>
 
-				<a href="/projects" class="header__link">Projects</a>
-
-				<a href="/about" class="header__link">About</a>
+				<a
+					href="/projects"
+					class={`header__link ${$page.url.pathname === '/projects' ? 'header__link_active' : ''}`}
+				>
+					projects
+				</a>
+				<a
+					href="/about"
+					class={`header__link ${$page.url.pathname === '/about' ? 'header__link_active' : ''}`}
+				>
+					about
+				</a>
 			</div>
 		</div>
 	</div>
