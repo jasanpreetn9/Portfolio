@@ -3,6 +3,8 @@
 	import { page } from '$app/stores';
 	import { email, github, logo } from '$lib/images/icons';
 	import { banner } from '$lib/images';
+	let isMobileMenuOpen = false;
+
 </script>
 
 <svelte:head>
@@ -16,7 +18,9 @@
 	<meta property="og:site_name" content="Jnagra" />
 </svelte:head>
 <header class="header">
-	<input class="hamburger" type="checkbox" aria-label="Menu" />
+	<!-- <input class="hamburger" type="checkbox" aria-label="Menu" /> -->
+	<input bind:checked={isMobileMenuOpen} class="hamburger" type="checkbox" aria-label="Menu" />
+
 
 	<div class="media-header">
 		<span class="media-header__line"></span>
@@ -38,6 +42,7 @@
 			</a>
 			<div class="header__links">
 				<a
+				on:click={() => isMobileMenuOpen = false}
 					href="/"
 					class={`header__link ${$page.url.pathname === '/' ? 'header__link_active' : ''}`}
 				>
@@ -45,12 +50,14 @@
 				</a>
 
 				<a
+				on:click={() => isMobileMenuOpen = false}
 					href="/projects"
 					class={`header__link ${$page.url.pathname === '/projects' ? 'header__link_active' : ''}`}
 				>
 					projects
 				</a>
 				<a
+				on:click={() => isMobileMenuOpen = false}
 					href="/about"
 					class={`header__link ${$page.url.pathname === '/about' ? 'header__link_active' : ''}`}
 				>
