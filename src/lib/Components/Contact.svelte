@@ -42,6 +42,7 @@
 							rows="10"
 							placeholder="Your message"
 							class="form-input"
+							
 						/>
 					</div>
 					<button class="send-message">Send</button>

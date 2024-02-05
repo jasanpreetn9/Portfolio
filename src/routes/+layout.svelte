@@ -18,7 +18,6 @@
 	<meta property="og:site_name" content="Jnagra" />
 </svelte:head>
 <header class="header">
-	<!-- <input class="hamburger" type="checkbox" aria-label="Menu" /> -->
 	<input bind:checked={isMobileMenuOpen} class="hamburger" type="checkbox" aria-label="Menu" />
 
 
@@ -80,13 +79,13 @@
 						<img src={logo} alt="logo" class="logo__img" />
 						<div class="logo__name">Jnagra</div>
 					</div>
-					<a class="footer__email" href="mailto:Jasanpreet@jnagra.com"> Jasanpreet@jnagra.com </a>
+					<!-- <a class="footer__email" href="mailto:Jasanpreet@jnagra.com"> Jasanpreet@jnagra.com </a> -->
 				</div>
 
-				<p class="footer__description">Web designer and front-end developer.</p>
+				<p class="footer__description">Web designer and full stack web developer.</p>
 			</div>
 		</div>
-		<div class="footer__copyright">© Copyright 2023. Made by Jnagra</div>
+		<div class="footer__copyright">© Copyright {new Date().getFullYear()}. Made by Jnagra</div>
 	</div>
 </footer>
 

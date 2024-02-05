@@ -31,7 +31,7 @@
 	<section class="projects">
 		<div class="projects__header">
 			<h2 class="h2">Projects</h2>
-			<a class="projects__link" href="/projects">View all</a>
+			<a class="projects__link" href="/projects">View all -&gt;</a>
 		</div>
 
 		<ProjectsList projects={projects.slice(0, 3)} />
@@ -54,7 +54,7 @@
 				</p>
 			</div>
 
-			<a href="/about-me" class="button">View all -&gt;</a>
+			<a href="/about" class="button">View all -&gt;</a>
 		</div>
 		<img src={aboutMe} alt="about-me-img" class="about__image" />
 	</section>
