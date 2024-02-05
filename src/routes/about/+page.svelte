@@ -1,6 +1,7 @@
 <script>
 	import { Skills } from '$lib/Components';
 	import { aboutMe } from '$lib/images';
+	import { isMenuOpen } from '$lib/stores';
 </script>
 
 <div class="container content">

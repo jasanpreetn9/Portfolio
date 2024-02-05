@@ -2,10 +2,18 @@
 	import '$lib/global.css';
 	import { page } from '$app/stores';
 	import { email, github, logo } from '$lib/images/icons';
+	import { banner } from '$lib/images';
 </script>
 
 <svelte:head>
 	<title>Jnagra</title>
+	<meta property="og:image" content={banner} />
+	<meta name="theme-color" content="#C778DD" />
+	<meta property="og:title" content="Jnagra — Full Stack web developer" />
+	<meta property="og:description" content="High school senior, web developer, and aspiring innovator. Let's build something awesome together!"/>
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="en" />
+	<meta property="og:site_name" content="Jnagra" />
 </svelte:head>
 <header class="header">
 	<input class="hamburger" type="checkbox" aria-label="Menu" />
