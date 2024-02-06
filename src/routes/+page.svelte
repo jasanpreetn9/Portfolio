@@ -56,7 +56,6 @@
 
 			<a href="/about" class="button">View all -&gt;</a>
 		</div>
-		<img src={aboutMe} alt="about-me-img" class="about__image" />
 	</section>
 
 	<Contact />
