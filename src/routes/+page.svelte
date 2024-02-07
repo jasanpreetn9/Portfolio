@@ -17,9 +17,9 @@
 			</div>
 			<a class="button button__primary" href="#contacts">Contact Me</a>
 		</div>
-		<div class="hero__illustrations">
+		<!-- <div class="hero__illustrations">
 			<img src={hero} alt="Jnagra" class="hero__image" />
-		</div>
+		</div> -->
 	</section>
 
 	<figure class="quote">
@@ -44,7 +44,7 @@
 			<h2 class="h2">About</h2>
 			<div class="about__text">
 				<p class="about__description">
-					I’m a self-taught front-end developer. I can develop responsive websites from scratch and
+					I’m a self-taught full stack developer. I can develop responsive websites from scratch and
 					raise them into modern user-friendly web experiences.
 				</p>
 				<p class="about__description">
