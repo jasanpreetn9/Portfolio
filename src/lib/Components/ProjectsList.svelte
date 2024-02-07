@@ -64,6 +64,7 @@
 		padding: 8px 16px;
 		border: 1px solid var(--primary);
 		font-weight: 500;
+		margin-top: auto;
 	}
 	.button:hover {
 		background-color: var(--primary-op);
@@ -71,6 +72,7 @@
 
 	.project {
 		border: 1px solid var(--gray);
+		height: 100%;
 	}
 	.project__links {
 		display: flex;

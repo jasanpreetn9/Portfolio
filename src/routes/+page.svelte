@@ -57,6 +57,7 @@
 	<Contact />
 </div>
 
+
 <style>
 	div,
 	span,
@@ -77,7 +78,6 @@
 		text-decoration: none;
 		color: inherit;
 	}
-
 
 	.button {
 		display: inline-block;
@@ -136,7 +136,6 @@
 		color: inherit;
 	}
 
-
 	.button {
 		display: inline-block;
 		padding: 8px 16px;
@@ -186,7 +185,6 @@
 		color: var(--primary);
 	}
 
-	
 	.container {
 		max-width: 1024px;
 		margin: 0 auto;
@@ -237,7 +235,6 @@
 		flex-wrap: wrap;
 	}
 
-	
 	.hero__title {
 		min-width: 300px;
 		font-size: 32px;
