@@ -11,9 +11,6 @@
 	</div>
 
 	<section class="about">
-		<div class="about__illustrations">
-			<img src={aboutMe} alt="" class="about__image" />
-		</div>
 		<div class="about__text">
 			<p class="about__description">
 				I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive

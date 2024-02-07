@@ -2,7 +2,6 @@
 	export let data;
 	const { projects } = data;
 	import { ProjectsList, Skills, Contact } from '$lib/Components';
-	import { hero, aboutMe } from '$lib/images';
 </script>
 
 <div class="container content">
@@ -17,9 +16,6 @@
 			</div>
 			<a class="button button__primary" href="#contacts">Contact Me</a>
 		</div>
-		<!-- <div class="hero__illustrations">
-			<img src={hero} alt="Jnagra" class="hero__image" />
-		</div> -->
 	</section>
 
 	<figure class="quote">
@@ -68,7 +64,6 @@
 	h2,
 	p,
 	a,
-	img,
 	section {
 		margin: 0;
 		padding: 0;
@@ -83,10 +78,6 @@
 		color: inherit;
 	}
 
-	img {
-		max-width: 100%;
-		display: block;
-	}
 
 	.button {
 		display: inline-block;
@@ -139,30 +130,12 @@
 		right: -16px;
 		top: 50%;
 	}
-	div,
-	h2,
-	a,
-	img,
-	section {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		font-size: 100%;
-		font: inherit;
-		vertical-align: baseline;
-	}
 
 	a {
 		text-decoration: none;
 		color: inherit;
 	}
 
-	
-
-	img {
-		max-width: 100%;
-		display: block;
-	}
 
 	.button {
 		display: inline-block;
@@ -255,11 +228,6 @@
 	.about__description {
 		color: var(--gray);
 	}
-	.about__image {
-		flex: 1 1 0;
-		max-width: 340px;
-		border-bottom: 1px solid var(--primary);
-	}
 
 	.hero {
 		display: flex;
@@ -269,20 +237,7 @@
 		flex-wrap: wrap;
 	}
 
-	.hero__image {
-		position: relative;
-		z-index: 2;
-		border-bottom: 1px solid var(--primary);
-	}
-	.hero__content,
-	.hero__illustrations {
-		flex: 1 1 0;
-	}
-	.hero__illustrations {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-	}
+	
 	.hero__title {
 		min-width: 300px;
 		font-size: 32px;
