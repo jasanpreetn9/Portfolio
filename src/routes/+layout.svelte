@@ -16,6 +16,8 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:locale" content="en" />
 	<meta property="og:site_name" content="Jnagra" />
+	<link rel="icon" href={logo} />
+
 </svelte:head>
 <header class="header">
 	<input bind:checked={isMobileMenuOpen} class="hamburger" type="checkbox" aria-label="Menu" />
