@@ -1,7 +1,7 @@
 <script>
-	export let data;
-	const { projects } = data;
-	import { ProjectsList } from '$lib/Components';
+	import { ProjectsGrid } from '$lib/Components';
+	import { projectList } from '$lib/projects';
+	const projects = projectList.sort((a, b) => a.order - b.order);
 </script>
 
 <div class="container content">
@@ -10,7 +10,7 @@
 		<p class="path__description">All of my projects</p>
 	</div>
 
-	<ProjectsList {projects} />
+	<ProjectsGrid {projects} />
 </div>
 
 <style>
