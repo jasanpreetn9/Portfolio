@@ -1,12 +1,15 @@
 <script>
 	import '$lib/global.css';
-	import {injectSpeedInsights} from "@vercel/speed-insights/sveltekit"
 	import { page } from '$app/stores';
 	import { email, github, logo } from '$lib/images/icons';
 	import { banner } from '$lib/images';
-	injectSpeedInsights();
-	let isMobileMenuOpen = false;
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
 
+	injectSpeedInsights();
+	inject({ mode: dev ? 'development' : 'production' });
+	let isMobileMenuOpen = false;
 </script>
 
 <svelte:head>
@@ -14,16 +17,17 @@
 	<meta property="og:image" content={banner} />
 	<meta name="theme-color" content="#C778DD" />
 	<meta property="og:title" content="Jnagra — Full Stack web developer" />
-	<meta property="og:description" content="High school senior, web developer, and aspiring innovator. Let's build something awesome together!"/>
+	<meta
+		property="og:description"
+		content="High school senior, web developer, and aspiring innovator. Let's build something awesome together!"
+	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:locale" content="en" />
 	<meta property="og:site_name" content="Jnagra" />
 	<link rel="icon" href={logo} />
-
 </svelte:head>
 <header class="header">
 	<input bind:checked={isMobileMenuOpen} class="hamburger" type="checkbox" aria-label="Menu" />
-
 
 	<div class="media-header">
 		<span class="media-header__line"></span>
@@ -45,7 +49,7 @@
 			</a>
 			<div class="header__links">
 				<a
-				on:click={() => isMobileMenuOpen = false}
+					on:click={() => (isMobileMenuOpen = false)}
 					href="/"
 					class={`header__link ${$page.url.pathname === '/' ? 'header__link_active' : ''}`}
 				>
@@ -53,14 +57,14 @@
 				</a>
 
 				<a
-				on:click={() => isMobileMenuOpen = false}
+					on:click={() => (isMobileMenuOpen = false)}
 					href="/projects"
 					class={`header__link ${$page.url.pathname === '/projects' ? 'header__link_active' : ''}`}
 				>
 					projects
 				</a>
 				<a
-				on:click={() => isMobileMenuOpen = false}
+					on:click={() => (isMobileMenuOpen = false)}
 					href="/about"
 					class={`header__link ${$page.url.pathname === '/about' ? 'header__link_active' : ''}`}
 				>
