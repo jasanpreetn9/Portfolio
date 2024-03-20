@@ -1,8 +1,10 @@
 <script>
 	import '$lib/global.css';
+	import {injectSpeedInsights} from "@vercel/speed-insights/sveltekit"
 	import { page } from '$app/stores';
 	import { email, github, logo } from '$lib/images/icons';
 	import { banner } from '$lib/images';
+	injectSpeedInsights();
 	let isMobileMenuOpen = false;
 
 </script>
