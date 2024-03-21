@@ -1,7 +1,6 @@
 <script>
-	import { projectList } from '$lib/projects';
+	import { projects, description } from '$lib';
 	import { ProjectsGrid, Skills, Contact } from '$lib/Components';
-	const projects = projectList.sort((a, b) => a.order - b.order);
 </script>
 
 <div class="container content">
@@ -40,13 +39,7 @@
 			<h2 class="h2">About</h2>
 			<div class="about__text">
 				<p class="about__description">
-					I’m a self-taught full stack developer. I can develop responsive websites from scratch and
-					raise them into modern user-friendly web experiences.
-				</p>
-				<p class="about__description">
-					Transforming my creativity and knowledge into a websites has been my passion for over a
-					year. I have been helping various clients to establish their presence online. I always
-					strive to learn about the newest technologies and frameworks.
+					{description[0]}
 				</p>
 			</div>
 

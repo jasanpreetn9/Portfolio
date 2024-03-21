@@ -1,7 +1,6 @@
 <script>
 	import { ProjectsGrid } from '$lib/Components';
-	import { projectList } from '$lib/projects';
-	const projects = projectList.sort((a, b) => a.order - b.order);
+	import { projects } from '$lib';
 </script>
 
 <div class="container content">

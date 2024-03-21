@@ -1,49 +1,23 @@
+<script>
+	import { skills } from '$lib';
+</script>
+
 <sections class="skills">
 	<div class="skills__header">
 		<h2 class="h2">Skills</h2>
 	</div>
 	<div class="skills__content">
 		<div class="skills__list">
-			<div class="skill-block">
-				<div class="skill-block__name">Programming Languages</div>
-				<ul class="skill-block__list">
-					<li class="skill-block__skill">HTML & CSS</li>
-					<li class="skill-block__skill">Javascript</li>
-					<li class="skill-block__skill">Typescript</li>
-					<li class="skill-block__skill">NodeJs</li>
-					<li class="skill-block__skill">Java</li>
-					<li class="skill-block__skill">Python</li>
-					<li class="skill-block__skill">Flutter</li>
-				</ul>
-			</div>
-			<div class="skill-block">
-				<div class="skill-block__name">Databases</div>
-				<ul class="skill-block__list">
-					<li class="skill-block__skill">Postgres</li>
-					<li class="skill-block__skill">SQlite</li>
-					<li class="skill-block__skill">SQL</li>
-				</ul>
-			</div>
-			<div class="skill-block">
-				<div class="skill-block__name">Web Frameworks</div>
-				<ul class="skill-block__list">
-					<li class="skill-block__skill">Svelte</li>
-					<li class="skill-block__skill">Sveltekit</li>
-					<li class="skill-block__skill">Express</li>
-				</ul>
-			</div>
-            
-			<div class="skill-block">
-				<div class="skill-block__name">Tools</div>
-				<ul class="skill-block__list">
-					<li class="skill-block__skill">VSCode</li>
-					<li class="skill-block__skill">NeoVim</li>
-					<li class="skill-block__skill">Figma</li>
-					<li class="skill-block__skill">Git & Github</li>
-                    <li class="skill-block__skill">Docker</li>
-				</ul>
-			</div>
-
+			{#each skills as skill}
+				<div class="skill-block">
+					<div class="skill-block__name">{skill.category}</div>
+					<ul class="skill-block__list">
+						{#each skill.list as item}
+							<li class="skill-block__skill">{item}</li>
+						{/each}
+					</ul>
+				</div>
+			{/each}
 		</div>
 	</div>
 </sections>
@@ -60,8 +34,6 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
-
-	
 
 	ul {
 		list-style: none;
