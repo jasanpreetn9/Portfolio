@@ -147,6 +147,7 @@
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
 		font-size: 13px;
+		font-family: inherit;
 	}
 	.send-message {
 		border: 1px solid var(--gray);
