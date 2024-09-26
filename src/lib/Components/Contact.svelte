@@ -13,9 +13,9 @@
 			<div class="contacts__media">
 				<h3 class="contacts__title">Contact Info</h3>
 				<div class="contacts__list">
-					<a class="contact" href="mailto:Jasanpreetn9@gmail.com">
+					<a class="contact" href="mailto:Jasanpreet@jnagra.com">
 						<img src={email} alt="" />
-						<div class="contact__name">Jasanpreetn9@gmail.com</div>
+						<div class="contact__name">Jasanpreet@jnagra.com</div>
 					</a>
 				</div>
 			</div>
