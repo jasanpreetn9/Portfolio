@@ -19,12 +19,11 @@
 					</a>
 				</div>
 			</div>
-
 		</div>
 		<div class="contacts__media">
 			<h3 class="contacts__title">Message me here</h3>
 			<div class="contacts__list">
-				<form action="">
+				<form action="https://api.web3forms.com/submit" method="POST">
 					<div class="input">
 						<label for="name">Name</label>
 						<input type="text" name="name" placeholder="John Doe" class="form-input" />
@@ -42,10 +41,12 @@
 							rows="10"
 							placeholder="Your message"
 							class="form-input"
-							style="resize: none;"							
+							style="resize: none;"
 						/>
 					</div>
-					<button class="send-message">Send</button>
+					<button class="send-message" type="submit">Send</button>
+					<input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+					<input type="hidden" name="access_key" value="5651ac5b-5770-4c5f-8db8-519c21b5dcc2" />
 				</form>
 			</div>
 		</div>
