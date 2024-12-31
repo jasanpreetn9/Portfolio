@@ -10,7 +10,7 @@
 				Hello! I'm <span>Jasanpreet</span> <span>Nagra</span>
 			</h1>
 			<div class="hero__description">
-				High school senior, web developer, and aspiring innovator. Let's build something awesome
+				UTSA freshmen, web developer, and aspiring innovator. Let's build something awesome
 				together!
 			</div>
 			<a class="button button__primary" href="#contacts">Contact Me</a>

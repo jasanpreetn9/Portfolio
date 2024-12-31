@@ -9,9 +9,7 @@ import {
 
 export const description = [
 	`Hello! I'm Jasanpreet Nagra, a passionate software developer who started coding at the age of 13. I have a strong foundation in both front-end and back-end development and am eager to apply my skills professionally. `,
-	`I've also I collaborated with other developers on a variety of projects on GitHub, to improve their functionality and usability. In addition to my coding pursuits, I am enrolled UTSA in bachelors of computer science, further expanding my knowledge and preparing for future academic challenges. `,
-	`When I'm not coding, I enjoy playing first-person shooter games, getting enough rest, and focusing on my studies.
-			`
+	`I've also I collaborated with other developers on a variety of projects on GitHub, to improve their functionality and usability. In addition to my coding pursuits, I am enrolled UTSA in bachelors of computer science, further expanding my knowledge and preparing for future academic challenges. `
 ];
 export const skills = [
 	{
