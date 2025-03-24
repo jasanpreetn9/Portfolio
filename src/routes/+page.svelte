@@ -12,7 +12,7 @@
 	<meta property="og:title" content="Jnagra — Full Stack web developer" />
 	<meta
 		property="og:description"
-		content="High school senior, web developer, and aspiring innovator. Let's build something awesome together!"
+		content="College Freshmen, web developer, and aspiring innovator. Let's build something awesome together!"
 	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:locale" content="en" />
