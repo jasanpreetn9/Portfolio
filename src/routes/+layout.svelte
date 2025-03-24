@@ -12,20 +12,6 @@
 	let isMobileMenuOpen = false;
 </script>
 
-<svelte:head>
-	<title>Jnagra</title>
-	<meta property="og:image" content={banner} />
-	<meta name="theme-color" content="#C778DD" />
-	<meta property="og:title" content="Jnagra — Full Stack web developer" />
-	<meta
-		property="og:description"
-		content="High school senior, web developer, and aspiring innovator. Let's build something awesome together!"
-	/>
-	<meta property="og:type" content="website" />
-	<meta property="og:locale" content="en" />
-	<meta property="og:site_name" content="Jnagra" />
-	<link rel="icon" href={logo} />
-</svelte:head>
 <header class="header">
 	<input bind:checked={isMobileMenuOpen} class="hamburger" type="checkbox" aria-label="Menu" />
 

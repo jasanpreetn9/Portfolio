@@ -1,8 +1,23 @@
 <script>
 	import { ProjectsGrid } from '$lib/Components';
 	import { projects } from '$lib';
+	import { banner } from '$lib/images';
+	import { logo } from '$lib/images/icons';
 </script>
-
+<svelte:head>
+	<title>Jasanpreet Nagra | projects</title>
+	<meta property="og:image" content={banner} />
+	<meta name="theme-color" content="#C778DD" />
+	<meta property="og:title" content="Jnagra — Full Stack web developer" />
+	<meta
+		property="og:description"
+		content="High school senior, web developer, and aspiring innovator. Let's build something awesome together!"
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="en" />
+	<meta property="og:site_name" content="Jnagra" />
+	<link rel="icon" href={logo} />
+</svelte:head>
 <div class="container content">
 	<div class="path">
 		<h1 class="h1 path__name">projects</h1>

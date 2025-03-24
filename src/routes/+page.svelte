@@ -1,7 +1,24 @@
 <script>
 	import { projects, description } from '$lib';
 	import { ProjectsGrid, Skills, Contact } from '$lib/Components';
+	import { banner } from '$lib/images';
+	import { logo } from '$lib/images/icons';
 </script>
+
+<svelte:head>
+	<title>Jasanpreet Nagra | home</title>
+	<meta property="og:image" content={banner} />
+	<meta name="theme-color" content="#C778DD" />
+	<meta property="og:title" content="Jnagra — Full Stack web developer" />
+	<meta
+		property="og:description"
+		content="High school senior, web developer, and aspiring innovator. Let's build something awesome together!"
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="en" />
+	<meta property="og:site_name" content="Jnagra" />
+	<link rel="icon" href={logo} />
+</svelte:head>
 
 <div class="container content">
 	<section class="hero">
@@ -10,7 +27,7 @@
 				Hello! I'm <span>Jasanpreet</span> <span>Nagra</span>
 			</h1>
 			<div class="hero__description">
-				UTSA freshmen, web developer, and aspiring innovator. Let's build something awesome
+				UTSA sophomore, web developer, and aspiring innovator. Let's build something awesome
 				together!
 			</div>
 			<a class="button button__primary" href="#contacts">Contact Me</a>
